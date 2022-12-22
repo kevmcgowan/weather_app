@@ -1,0 +1,144 @@
+/* VARIABLES */
+:root {
+  --blue: #048BA8;
+  --orange: #F18F01;
+}
+
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* GLOBAL CLASSES */
+.text-center {
+  text-align: center;
+}
+
+.row, .column {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* CUSTOM STYLES */
+.header {
+  background-image: linear-gradient(to right, rgba(85, 73, 249, 0.8), rgb(4, 3, 70));
+  margin: 0px 0 25px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+/* h1.body-header {
+  margin: 20px 0 25px;
+  color: var(--blue);
+} */
+
+input.search-input {
+  margin: 10px 10px 10px 10px;
+  padding: 8px 15px;
+  width: 1fr;
+  border-radius: 5px;
+  border: 1px solid blue;
+  color: #555;
+}
+
+button{
+  background-color: rgb(57, 165, 247);
+  color: white;
+  width: 150px;
+  margin: 10px 10px 10px 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 0 3%;
+}
+
+#today {
+  display: grid;
+  grid-column: 2fr;
+  grid-column-start: 1 / 5;
+  border: 2px solid black;
+}
+main .weather-card {
+  padding: 15px 10px;
+  border: 4px solid var(--blue);
+  border-radius: 4px;
+  background-image: linear-gradient(rgba(61, 63, 92, 0.6), rgba(16, 72, 224, 0.6))
+}
+
+main .weather-card > *:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+
+
+main .weather-card h3 {
+  font-size: 1rem;
+}
+
+main .weather-card p {
+  font-size: .9rem;
+}
+
+main .weather-card a {
+  color: var(--orange);
+  font-size: .8rem;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--orange);
+}
+
+/* media query */
+@media (max-width: 768px) {
+  body{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* GLOBAL CLASSES */
+
+
+
+/* My class */
+/* .todayBox{
+  margin-left: 10px;
+  border: 2px solid black;
+  width: 750px;
+} */
+
+
+
+
+  
+  /* CUSTOM STYLES */
+
+ 
+
+
+
+
+
