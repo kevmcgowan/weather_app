@@ -72,41 +72,41 @@ button:hover {
   cursor: pointer;
 }
 
-main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  padding: 0 3%;
+.today-header {
+  margin-left: 30px;
 }
-
 #today {
-  display: grid;
-  grid-column: 2fr;
-  grid-column-start: 1 / 5;
+  width: 1000px;
+  margin-left: 30px;
   border: 2px solid black;
 }
-main .weather-card {
+
+.forecast-header {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.weather-card {
   padding: 15px 10px;
+  margin-left: 30px;
   border: 4px solid var(--blue);
   border-radius: 4px;
   background-image: linear-gradient(rgba(61, 63, 92, 0.6), rgba(16, 72, 224, 0.6))
 }
 
-main .weather-card > *:not(:last-child) {
+.weather-card > *:not(:last-child) {
   margin-bottom: 5px;
 }
 
 
-
-main .weather-card h3 {
+.weather-card h3 {
   font-size: 1rem;
 }
-
-main .weather-card p {
+.weather-card p {
   font-size: .9rem;
 }
 
-main .weather-card a {
+.weather-card a {
   color: var(--orange);
   font-size: .8rem;
   text-decoration: none;

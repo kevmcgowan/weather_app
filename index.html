@@ -22,21 +22,26 @@
         <aside class="col-lg-3 pb-3">
           <h2 class="main-header text-left">Search for a City:</h2>
           <div class="row justify-left"> 
-            <input class="search-input" type="text" placeholder="Enter City Name."/>
+            <input class="search-input" type="text" placeholder="Enter City Name." aria-labelledby="today-heading" aria-controls="today's forecast"/>
           </div>
           <div>
-            <button type="submit" class="btn search-button" id="search-button" aria-label="submit search"> Search</button>
+            <button type="submit" class="btn search-button" id="search-button" aria-label="submit search"> 
+              Search
+            </button>
+            <hr class="hr weather-hr" />
           </div>
           <div class="list-group" id="history"></div>
+            <ul>
+              
+            </ul>
         </aside>
-        <main>
-        <div class="col-lg-9 pb-3">
-          <section
-            id="today" class="row mt-3" role="region" aria-live="polite"></section>
-          <section
-            id="forecast" class="row mt-3" role="region" aria-live="polite"
-          ></section>
-        </main>
+        <div>
+          <h1 class="today-header text-left">Today's Weather Forecast:</h1>
+          <section id="today" role="region" aria-live="polite" title="Today's Weather">
+          </section>
+          <h1 class="forecast-header text-left">5 Day Weather Forecast:</h1>
+          <section id="forecast" class="row mt-3" role="region" aria-live="polite">
+          </section>
         </div>
       </div>
     </div>
